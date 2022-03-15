@@ -1,3 +1,5 @@
+import org.jetbrains.dokka.gradle.DokkaTask
+
 val ktor_version: String by project
 val kotlin_version: String by project
 val logback_version: String by project
@@ -8,6 +10,8 @@ plugins {
     application
     kotlin("jvm") version "1.6.10"
     kotlin("plugin.serialization") version "1.6.10"
+    id("org.jetbrains.dokka") version "1.6.10"
+    id("maven-publish")
 }
 
 group = "dev.mooner"
@@ -21,6 +25,8 @@ repositories {
 }
 
 dependencies {
+    dokkaHtmlPlugin("org.jetbrains.dokka:kotlin-as-java-plugin:1.6.10")
+
     implementation("io.ktor:ktor-server-core:$ktor_version")
     implementation("io.ktor:ktor-server-cio:$ktor_version")
     implementation("ch.qos.logback:logback-classic:$logback_version")
