@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-    `Laika 🐕` is a <a href="https://github.com/remote-kakao">Remote-Kakao</a> compatible Kotlin-coroutines based client (WIP)
+    `Laika 🐕` is a <a href="https://github.com/remote-kakao">Remote-Kakao</a> compatible Kotlin-coroutines based server (WIP)
 </p>
 
 <p align="center">
@@ -31,7 +31,7 @@ val laika = Laika {
 }
 ```
 
-+ Set server event listener and create reply message
++ Set client event listener and create reply message
 ```kotlin
 laika.on<MessageReceiveEvent> {
     if (message.content == "!hello") {
@@ -40,7 +40,7 @@ laika.on<MessageReceiveEvent> {
 }
 ```
 
-+ Start client
++ Start server
 ```kotlin
 laika.start()
 ```
