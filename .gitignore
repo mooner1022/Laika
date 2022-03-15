@@ -132,4 +132,4 @@ gradle-app.setting
 docs/
 !docs/index.html
 
-src\main\kotlin\dev\mooner\laika\Main.kt
+src/main/kotlin/dev/mooner/laika/Main.kt
