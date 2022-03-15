@@ -6,8 +6,6 @@
 
 package dev.mooner.laika.entity.room
 
-import kotlinx.coroutines.CoroutineScope
-
 interface ChatRoom {
 
     val name: String

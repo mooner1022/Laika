@@ -12,7 +12,6 @@ import dev.mooner.laika.entity.room.ChatRoom
 import dev.mooner.laika.gateway.Gateway
 import dev.mooner.laika.gateway.GatewayObject
 import dev.mooner.laika.gateway.internal.GatewayImpl
-import mu.KotlinLogging
 import java.util.UUID
 
 internal data class ChatRoomImpl(
