@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-    !! Leika is still in early development stage, any structure or usage can be changed !!
+    !! Laika is still in early development stage, any structure or usage can be changed !!
 </p>
 
 <p align="center">
