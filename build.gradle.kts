@@ -7,8 +7,8 @@ val logback_version: String by project
 val atomicfu_version = "0.17.1"
 
 plugins {
-    application
-    kotlin("jvm") version "1.6.10"
+    `java-library`
+    kotlin("jvm") version "1.6.10" apply false
     kotlin("plugin.serialization") version "1.6.10"
     id("org.jetbrains.dokka") version "1.6.10"
     id("maven-publish")
@@ -16,9 +16,6 @@ plugins {
 
 group = "dev.mooner"
 version = "0.0.1"
-application {
-    mainClass.set("dev.mooner.ApplicationKt")
-}
 
 repositories {
     mavenCentral()
