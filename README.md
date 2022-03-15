@@ -20,6 +20,22 @@
 </p>
 
 
+### Installation (build.gradle.kts)
++ Add jitpack url
+```kotlin
+repositories {
+    /* ... */
+    maven(url = "https://jitpack.io")
+}
+```
+
++ Add Laika dependency
+```kotlin
+dependencies {
+    implementation("com.github.mooner1022:Laika:V0.0.1-A1")
+}
+```
+
 ### Usage
 
 + Create `Laika` instance
